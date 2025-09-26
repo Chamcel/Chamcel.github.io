@@ -1,67 +1,78 @@
 <!doctype html>
 <html lang="ko">
-
 <head>
   <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="/chamTaste.svg" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="canonical" href="https://chamcel.github.io/" />
 
-  <!-- 기본 SEO -->
-  <title>🐦참셀 ChamCel - 던파 캐릭터 일괄 조회 | 던파 다캐릭 조회</title>
-  <meta name="description" content="참셀 ChamCel - 던파 캐릭터 일괄 조회 서비스. 던파 다캐릭 조회, 캐릭터 정보를 한 번에 확인해보세요." />
+  <link rel="shortcut icon" href="/logo/chamcel-64.png">
+  <link rel="icon" type="image/png" sizes="64x64"   href="/logo/chamcel-64.png">
+  <link rel="icon" type="image/png" sizes="128x128" href="/logo/chamcel-128.png">
+  <link rel="icon" type="image/png" sizes="180x180" href="/logo/chamcel-180.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/logo/chamcel-180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="/logo/chamcel-192.png">
+  <link rel="icon" type="image/png" sizes="256x256" href="/logo/chamcel-256.png">
+  <link rel="icon" type="image/png" sizes="384x384" href="/logo/chamcel-384.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="/logo/chamcel-512.png">
+  <!-- Maskable (PWA용) -->
+  <link rel="icon" type="image/png" sizes="192x192" href="/logo/chamcel-192-maskable.png" purpose="maskable">
+  <link rel="icon" type="image/png" sizes="512x512" href="/logo/chamcel-512-maskable.png" purpose="maskable">
 
-  <!-- Open Graph (SNS 미리보기) -->
-  <meta property="og:title" content="참셀 ChamCel — 던파 캐릭터 일괄 조회" />
-  <meta property="og:description" content="던파 다캐릭 조회, 던파 캐릭터를 한 번에 검색하는 ChamCel 참셀 서비스" />
-  <meta property="og:url" content="https://chamcel.github.io/" />
-  <meta property="og:type" content="website" />
-  <meta property="og:image" content="https://chamcel.github.io/chamTaste.svg" />
+  <link rel="preload" as="image" href="/logo/header-logo-512x128.png" imagesizes="100vw" />
+
+  <!-- Theme color (모바일 브라우저 주소창 색) -->
+  <meta name="theme-color" content="#0b1220" media="(prefers-color-scheme: dark)">
+  <meta name="theme-color" content="#ffffff"  media="(prefers-color-scheme: light)">
+
+  <!-- 기본 SEO -->
+  <title>참셀 ChamCel - 던파 캐릭터 일괄 조회 | 던파 다캐릭 조회</title>
+  <meta name="description" content="참셀 ChamCel - 던파 캐릭터 일괄 조회 서비스. 던파 다캐릭 조회, 캐릭터 정보를 한 번에 확인해보세요.">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://chamcel.github.io/">
+  <meta property="og:title" content="참셀 ChamCel — 던파 캐릭터 일괄 조회">
+  <meta property="og:description" content="던파 다캐릭 조회, 던파 캐릭터를 한 번에 검색하는 ChamCel 참셀 서비스">
+  <meta property="og:image" content="https://chamcel.github.io/logo/og-image-1200x630.png">
 
   <!-- Twitter Card -->
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="참셀 ChamCel — 던파 캐릭터 일괄 조회" />
-  <meta name="twitter:description" content="던파 캐릭터들을 한 번에 조회해보세요." />
-  <meta name="twitter:image" content="https://chamcel.github.io/chamTaste.svg" />
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="참셀 ChamCel — 던파 캐릭터 일괄 조회">
+  <meta name="twitter:description" content="던파 캐릭터들을 한 번에 조회해보세요.">
+  <meta name="twitter:image" content="https://chamcel.github.io/logo/og-image-1200x630.png">
 
-  <!-- Google Search Console 인증 -->
-  <meta name="google-site-verification" content="20s6eFPuNJh-zVZwvKRBJ2kM8EWtT1htHkuGdwxwTXo" />
-  <!-- Naver Verification -->
-  <meta name="naver-site-verification" content="87d94552204e44910388f66b7eef3e5de0e54753" />
+  <!-- Search Console / NAVER -->
+  <meta name="google-site-verification" content="20s6eFPuNJh-zVZwvKRBJ2kM8EWtT1htHkuGdwxwTXo">
+  <meta name="naver-site-verification" content="87d94552204e44910388f66b7eef3e5de0e54753">
 
-
-  <!-- 구조화 데이터: Organization -->
+  <!-- JSON-LD: Organization -->
   <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Organization",
-      "name": "Chamcel",
-      "alternateName": ["참셀", "던파 캐릭터 일괄 조회", "던파 다캐릭 조회"],
-      "url": "https://chamcel.github.io/",
-      "logo": "https://chamcel.github.io/chamTaste.svg",
-      "sameAs": [
-        "https://github.com/Chamcel/Chamcel",
-        "https://github.com/Chamcel"
-      ]
-    }
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Chamcel",
+    "alternateName": ["참셀", "던파 캐릭터 일괄 조회", "던파 다캐릭 조회", "던파 참셀"],
+    "url": "https://chamcel.github.io/",
+    "logo": "https://chamcel.github.io/logo/chamcel-192.png",
+    "sameAs": [
+      "https://github.com/Chamcel/Chamcel",
+      "https://github.com/Chamcel"
+    ]
+  }
   </script>
-
-  <!-- 구조화 데이터: WebSite -->
   <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "WebSite",
-      "name": "Chamcel",
-      "alternateName": ["참셀", "던파 캐릭터 일괄 조회", "던파 다캐릭 조회"],
-      "url": "https://chamcel.github.io/"
-    }
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Chamcel",
+    "alternateName": ["참셀", "던파 캐릭터 일괄 조회", "던파 다캐릭 조회"],
+    "url": "https://chamcel.github.io/"
+  }
   </script>
-  <script type="module" crossorigin src="/assets/index-CuWxQy_j.js"></script>
-  <link rel="stylesheet" crossorigin href="/assets/index-CWw-8ftL.css">
+  <script type="module" crossorigin src="/assets/index-BO0N54Mk.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-D2P2D1S_.css">
 </head>
-
 <body>
   <div id="root"></div>
 </body>
-
 </html>
