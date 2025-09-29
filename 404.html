@@ -5,6 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="canonical" href="https://chamcel.github.io/" />
 
+  <!-- Robots -->
+  <meta name="robots" content="index,follow,max-image-preview:large" />
+
+  <!-- Favicon / PWA -->
   <link rel="shortcut icon" href="/logo/chamcel-64.png">
   <link rel="icon" type="image/png" sizes="64x64"   href="/logo/chamcel-64.png">
   <link rel="icon" type="image/png" sizes="128x128" href="/logo/chamcel-128.png">
@@ -14,26 +18,28 @@
   <link rel="icon" type="image/png" sizes="256x256" href="/logo/chamcel-256.png">
   <link rel="icon" type="image/png" sizes="384x384" href="/logo/chamcel-384.png">
   <link rel="icon" type="image/png" sizes="512x512" href="/logo/chamcel-512.png">
-  <!-- Maskable (PWA용) -->
   <link rel="icon" type="image/png" sizes="192x192" href="/logo/chamcel-192-maskable.png" purpose="maskable">
   <link rel="icon" type="image/png" sizes="512x512" href="/logo/chamcel-512-maskable.png" purpose="maskable">
+  <meta name="apple-mobile-web-app-title" content="참셀 ChamCel" />
 
-  <link rel="preload" as="image" href="/logo/header-logo-512x128.png" imagesizes="100vw" />
-
-  <!-- Theme color (모바일 브라우저 주소창 색) -->
+  <!-- Theme color -->
   <meta name="theme-color" content="#0b1220" media="(prefers-color-scheme: dark)">
   <meta name="theme-color" content="#ffffff"  media="(prefers-color-scheme: light)">
 
-  <!-- 기본 SEO -->
-  <title>참셀 ChamCel - 던파 캐릭터 일괄 조회 | 던파 다캐릭 조회</title>
-  <meta name="description" content="참셀 ChamCel - 던파 캐릭터 일괄 조회 서비스. 던파 다캐릭 조회, 캐릭터 정보를 한 번에 확인해보세요.">
+  <!-- Basic SEO -->
+  <title>참셀 ChamCel — 던파 캐릭터 일괄 조회</title>
+  <meta name="description" content="참셀 ChamCel — 던파 캐릭터 일괄 조회 서비스. 던파 다캐릭 조회, 캐릭터 정보를 한 번에 확인해보세요.">
 
   <!-- Open Graph -->
   <meta property="og:type" content="website">
+  <meta property="og:locale" content="ko_KR">
+  <meta property="og:site_name" content="참셀 ChamCel">
   <meta property="og:url" content="https://chamcel.github.io/">
   <meta property="og:title" content="참셀 ChamCel — 던파 캐릭터 일괄 조회">
-  <meta property="og:description" content="던파 다캐릭 조회, 던파 캐릭터를 한 번에 검색하는 ChamCel 참셀 서비스">
+  <meta property="og:description" content="던파 다캐릭 조회, 던파 캐릭터를 한 번에 검색하는 참셀(ChamCel) 서비스">
   <meta property="og:image" content="https://chamcel.github.io/logo/og-image-1200x630.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
@@ -45,13 +51,13 @@
   <meta name="google-site-verification" content="20s6eFPuNJh-zVZwvKRBJ2kM8EWtT1htHkuGdwxwTXo">
   <meta name="naver-site-verification" content="87d94552204e44910388f66b7eef3e5de0e54753">
 
-  <!-- JSON-LD: Organization -->
+  <!-- JSON-LD: Organization + Website(+SearchAction) -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "Organization",
-    "name": "Chamcel",
-    "alternateName": ["참셀", "던파 캐릭터 일괄 조회", "던파 다캐릭 조회", "던파 참셀"],
+    "name": "ChamCel",
+    "alternateName": ["참셀", "Chamcel", "참셀 ChamCel"],
     "url": "https://chamcel.github.io/",
     "logo": "https://chamcel.github.io/logo/chamcel-192.png",
     "sameAs": [
@@ -64,13 +70,18 @@
   {
     "@context": "https://schema.org",
     "@type": "WebSite",
-    "name": "Chamcel",
-    "alternateName": ["참셀", "던파 캐릭터 일괄 조회", "던파 다캐릭 조회"],
-    "url": "https://chamcel.github.io/"
+    "name": "참셀 ChamCel",
+    "alternateName": ["참셀", "Chamcel"],
+    "url": "https://chamcel.github.io/",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://chamcel.github.io/results?names={query}",
+      "query-input": "required name=query"
+    }
   }
   </script>
-  <script type="module" crossorigin src="/assets/index-BmDwt6ZK.js"></script>
-  <link rel="stylesheet" crossorigin href="/assets/index-D0vigzBj.css">
+  <script type="module" crossorigin src="/assets/main-CjMWSJq7.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/main-4hGtw9Ha.css">
 </head>
 <body>
   <div id="root"></div>
